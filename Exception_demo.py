@@ -4,7 +4,7 @@ print("Enter the num2")
 num2 = int(input())
 try:
     print("the sum of these two numbers is", num1+num2)
-except xception as e:
+except exception as e:
 	print(e)
 
 
@@ -18,8 +18,8 @@ try:
 	# Throws error since there are only 3 elements in array
 	print ("Fourth element = %d" %(a[3]))
 
-except:
-	print ("An error occurred")
+except exception as e:
+	print (e)
 
 
 # Program to handle multiple errors with one
@@ -45,3 +45,5 @@ except ZeroDivisionError:
 	print("ZeroDivisionError Occurred and Handled")
 except NameError:
 	print("NameError Occurred and Handled")
+except exception as e:
+	print(e)
